@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-label="staircase descending">
+  <style>
+    @keyframes staircase_down_ember { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
+    .sd-ember { animation: staircase_down_ember 3.8s ease-in-out infinite; }
+  </style>
+  <rect width="800" height="480" fill="#0B0B0D"/>
+  <g stroke="#F4EFE6" stroke-width="1.4" fill="none">
+    <polyline points="140,120 260,120 260,180 380,180 380,240 500,240 500,300 620,300 620,360 740,360"/>
+    <polyline points="140,120 140,480" opacity=".35"/>
+    <polyline points="740,360 740,480" opacity=".35"/>
+  </g>
+  <g opacity=".28" stroke="#F4EFE6" stroke-width="1">
+    <line x1="260" y1="120" x2="260" y2="480"/>
+    <line x1="380" y1="180" x2="380" y2="480"/>
+    <line x1="500" y1="240" x2="500" y2="480"/>
+    <line x1="620" y1="300" x2="620" y2="480"/>
+  </g>
+  <circle cx="740" cy="400" r="8" fill="#E8A33D" class="sd-ember"/>
+  <circle cx="740" cy="400" r="20" fill="#E8A33D" opacity=".18" class="sd-ember"/>
+</svg>

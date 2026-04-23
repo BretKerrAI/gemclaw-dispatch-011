@@ -1,0 +1,65 @@
+:root {
+  --void: #0B0B0D;
+  --void-lift: #121216;
+  --cream: #F4EFE6;
+  --amber: #E8A33D;
+  --blue: #2B5ADC;
+  --hair: rgba(244, 239, 230, 0.14);
+  --hair-strong: rgba(244, 239, 230, 0.28);
+  --ink-soft-cream: rgba(244, 239, 230, 0.72);
+  --outer: 9vw;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  background: var(--void);
+  color: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  overflow-x: hidden;
+  min-height: 100dvh;
+}
+
+::selection { background: var(--amber); color: var(--void); }
+
+a { color: inherit; text-decoration: none; }
+
+.display {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.015em;
+  line-height: 0.98;
+}
+
+.serif {
+  font-family: "DM Serif Display", Georgia, serif;
+  letter-spacing: -0.005em;
+}
+
+.mono {
+  font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+
+.mono-eyebrow {
+  font-family: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+.amber { color: var(--amber); }
+.blue  { color: var(--blue); }
+
+section { padding: 0 var(--outer); }
+
+@media (max-width: 960px) { :root { --outer: 7vw; } }
+@media (max-width: 480px) { :root { --outer: 6vw; } body { font-size: 16px; } }

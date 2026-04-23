@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-label="harbor in fog">
+  <style>
+    @keyframes harbor_fog_drift { from { transform: translateX(-60px); } to { transform: translateX(60px); } }
+    @keyframes harbor_fog_buoy { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+    .hf-band-a { animation: harbor_fog_drift 26s ease-in-out infinite alternate; }
+    .hf-band-b { animation: harbor_fog_drift 34s ease-in-out infinite alternate; animation-direction: alternate-reverse; }
+    .hf-buoy { animation: harbor_fog_buoy 3.6s ease-in-out infinite; }
+  </style>
+  <rect width="800" height="480" fill="#0B0B0D"/>
+  <g stroke="#2B5ADC" stroke-width="1" opacity=".72">
+    <line x1="0" y1="290" x2="800" y2="290"/>
+    <line x1="0" y1="320" x2="800" y2="320" opacity=".7"/>
+    <line x1="0" y1="350" x2="800" y2="350" opacity=".55"/>
+    <line x1="0" y1="380" x2="800" y2="380" opacity=".42"/>
+    <line x1="0" y1="410" x2="800" y2="410" opacity=".32"/>
+    <line x1="0" y1="440" x2="800" y2="440" opacity=".22"/>
+  </g>
+  <g fill="#F4EFE6" opacity=".25" class="hf-band-a">
+    <rect x="-120" y="190" width="400" height="14"/>
+    <rect x="320" y="220" width="260" height="10" opacity=".7"/>
+    <rect x="600" y="200" width="240" height="12" opacity=".8"/>
+  </g>
+  <g fill="#F4EFE6" opacity=".18" class="hf-band-b">
+    <rect x="-80" y="150" width="220" height="8"/>
+    <rect x="200" y="170" width="360" height="6" opacity=".7"/>
+    <rect x="560" y="140" width="300" height="10" opacity=".8"/>
+  </g>
+  <g fill="#F4EFE6" opacity=".68">
+    <rect x="140" y="264" width="6" height="30"/>
+    <rect x="540" y="260" width="6" height="30"/>
+    <rect x="700" y="268" width="6" height="26"/>
+  </g>
+  <circle cx="400" cy="280" r="4" fill="#E8A33D" class="hf-buoy"/>
+  <circle cx="400" cy="280" r="10" fill="#E8A33D" opacity=".2" class="hf-buoy"/>
+</svg>

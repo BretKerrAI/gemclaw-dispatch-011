@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-label="starfield">
+  <style>
+    @keyframes starfield_twinkle_a { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
+    @keyframes starfield_twinkle_b { 0%,100% { opacity: .9; } 50% { opacity: .3; } }
+    .sf-a { animation: starfield_twinkle_a 4.8s ease-in-out infinite; }
+    .sf-b { animation: starfield_twinkle_b 7.2s ease-in-out infinite; }
+    .sf-c { animation: starfield_twinkle_a 9.1s ease-in-out infinite; }
+  </style>
+  <rect width="800" height="480" fill="#0B0B0D"/>
+  <g fill="#F4EFE6">
+    <circle cx="68" cy="62" r="1" class="sf-a"/>
+    <circle cx="132" cy="210" r="1.4" class="sf-b"/>
+    <circle cx="214" cy="88" r="1" class="sf-c"/>
+    <circle cx="298" cy="158" r="1.2" class="sf-a"/>
+    <circle cx="376" cy="48" r="1" class="sf-b"/>
+    <circle cx="452" cy="228" r="1.4" class="sf-c"/>
+    <circle cx="508" cy="112" r="1" class="sf-a"/>
+    <circle cx="588" cy="196" r="1.2" class="sf-b"/>
+    <circle cx="652" cy="72" r="1" class="sf-c"/>
+    <circle cx="720" cy="166" r="1.4" class="sf-a"/>
+    <circle cx="98" cy="338" r="1" class="sf-b"/>
+    <circle cx="186" cy="412" r="1.2" class="sf-c"/>
+    <circle cx="272" cy="356" r="1" class="sf-a"/>
+    <circle cx="344" cy="432" r="1.4" class="sf-b"/>
+    <circle cx="426" cy="368" r="1" class="sf-c"/>
+    <circle cx="502" cy="398" r="1.2" class="sf-a"/>
+    <circle cx="582" cy="336" r="1" class="sf-b"/>
+    <circle cx="668" cy="418" r="1.4" class="sf-c"/>
+    <circle cx="742" cy="352" r="1" class="sf-a"/>
+  </g>
+  <g fill="#E8A33D">
+    <circle cx="248" cy="268" r="1.8" class="sf-b"/>
+    <circle cx="552" cy="282" r="1.8" class="sf-c"/>
+    <circle cx="400" cy="140" r="2" class="sf-a"/>
+  </g>
+</svg>

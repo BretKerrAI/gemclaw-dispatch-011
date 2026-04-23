@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-label="empty stage">
+  <style>
+    @keyframes empty_stage_fade { 0% { opacity: 0; } 20% { opacity: .9; } 80% { opacity: .9; } 100% { opacity: 0; } }
+    .es-spot { animation: empty_stage_fade 9s ease-in-out infinite; }
+  </style>
+  <rect width="800" height="480" fill="#0B0B0D"/>
+  <rect x="80" y="60" width="640" height="360" fill="none" stroke="#F4EFE6" stroke-width="2"/>
+  <rect x="60" y="40" width="680" height="20" fill="#F4EFE6" opacity=".55"/>
+  <line x1="80" y1="380" x2="720" y2="380" stroke="#F4EFE6" stroke-width="1" opacity=".5"/>
+  <g class="es-spot">
+    <polygon points="400,60 290,380 510,380" fill="#E8A33D" opacity=".14"/>
+    <polygon points="400,60 336,380 464,380" fill="#E8A33D" opacity=".24"/>
+    <ellipse cx="400" cy="378" rx="64" ry="10" fill="#E8A33D" opacity=".6"/>
+  </g>
+  <g stroke="#F4EFE6" stroke-width="1" opacity=".4">
+    <line x1="100" y1="60" x2="100" y2="420"/>
+    <line x1="700" y1="60" x2="700" y2="420"/>
+  </g>
+</svg>

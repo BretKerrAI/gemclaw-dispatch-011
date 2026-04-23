@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-label="rooftop at night">
+  <style>
+    @keyframes rooftop_night_twinkle { 0%,100% { opacity: .3; } 50% { opacity: 1; } }
+    @keyframes rooftop_night_glow { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+    .rn-star { animation: rooftop_night_twinkle 5.2s ease-in-out infinite; }
+    .rn-win { animation: rooftop_night_glow 4.4s ease-in-out infinite; }
+  </style>
+  <rect width="800" height="480" fill="#0B0B0D"/>
+  <g fill="#F4EFE6">
+    <circle cx="82" cy="68" r="1" class="rn-star"/>
+    <circle cx="158" cy="42" r="1.2" class="rn-star" style="animation-delay:-2s"/>
+    <circle cx="252" cy="90" r="1" class="rn-star" style="animation-delay:-3.2s"/>
+    <circle cx="338" cy="56" r="1" class="rn-star"/>
+    <circle cx="412" cy="102" r="1.2" class="rn-star" style="animation-delay:-1.4s"/>
+    <circle cx="506" cy="72" r="1" class="rn-star"/>
+    <circle cx="598" cy="58" r="1" class="rn-star" style="animation-delay:-2.8s"/>
+    <circle cx="676" cy="94" r="1.2" class="rn-star"/>
+    <circle cx="744" cy="42" r="1" class="rn-star" style="animation-delay:-3.7s"/>
+  </g>
+  <polyline points="0,300 60,300 60,260 140,260 140,240 220,240 220,280 300,280 300,200 380,200 380,230 460,230 460,210 540,210 540,250 620,250 620,220 720,220 720,280 800,280 800,480 0,480"
+            fill="#121216" stroke="#F4EFE6" stroke-width="1.2"/>
+  <rect x="332" y="260" width="18" height="22" fill="#E8A33D" class="rn-win"/>
+  <g fill="#F4EFE6" opacity=".2">
+    <rect x="74" y="312" width="4" height="6"/>
+    <rect x="160" y="272" width="4" height="6"/>
+    <rect x="244" y="252" width="4" height="6"/>
+    <rect x="472" y="222" width="4" height="6"/>
+    <rect x="564" y="262" width="4" height="6"/>
+    <rect x="644" y="232" width="4" height="6"/>
+    <rect x="744" y="292" width="4" height="6"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-label="staircase ascending">
+  <style>
+    @keyframes staircase_up_glow { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
+    .su-glow { animation: staircase_up_glow 4.4s ease-in-out infinite; }
+  </style>
+  <rect width="800" height="480" fill="#0B0B0D"/>
+  <g stroke="#F4EFE6" stroke-width="1.4" fill="none">
+    <polyline points="60,400 180,400 180,340 300,340 300,280 420,280 420,220 540,220 540,160 660,160"/>
+    <polyline points="60,400 60,480" opacity=".35"/>
+  </g>
+  <g opacity=".28" stroke="#F4EFE6" stroke-width="1">
+    <line x1="180" y1="340" x2="180" y2="480"/>
+    <line x1="300" y1="280" x2="300" y2="480"/>
+    <line x1="420" y1="220" x2="420" y2="480"/>
+    <line x1="540" y1="160" x2="540" y2="480"/>
+  </g>
+  <circle cx="660" cy="130" r="10" fill="#E8A33D" class="su-glow"/>
+  <circle cx="660" cy="130" r="26" fill="#E8A33D" opacity=".15" class="su-glow"/>
+</svg>

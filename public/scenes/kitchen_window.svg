@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-label="kitchen window">
+  <style>
+    @keyframes kitchen_window_breath { 0%,100% { opacity: .38; } 50% { opacity: .7; } }
+    .kw-light { animation: kitchen_window_breath 7.5s ease-in-out infinite; }
+  </style>
+  <rect width="800" height="480" fill="#0B0B0D"/>
+  <rect x="240" y="60" width="320" height="360" fill="#2B5ADC" class="kw-light"/>
+  <rect x="240" y="60" width="320" height="360" fill="none" stroke="#F4EFE6" stroke-width="2"/>
+  <line x1="400" y1="60" x2="400" y2="420" stroke="#F4EFE6" stroke-width="2"/>
+  <line x1="240" y1="240" x2="560" y2="240" stroke="#F4EFE6" stroke-width="2"/>
+  <line x1="240" y1="150" x2="560" y2="150" stroke="#F4EFE6" stroke-width="1" opacity=".4"/>
+  <line x1="240" y1="330" x2="560" y2="330" stroke="#F4EFE6" stroke-width="1" opacity=".4"/>
+  <line x1="320" y1="60" x2="320" y2="420" stroke="#F4EFE6" stroke-width="1" opacity=".4"/>
+  <line x1="480" y1="60" x2="480" y2="420" stroke="#F4EFE6" stroke-width="1" opacity=".4"/>
+  <rect x="180" y="420" width="440" height="10" fill="#F4EFE6" opacity=".75"/>
+  <line x1="140" y1="440" x2="660" y2="440" stroke="#F4EFE6" stroke-width="0.8" opacity=".35"/>
+</svg>

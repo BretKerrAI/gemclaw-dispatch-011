@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-label="subway tunnel">
+  <style>
+    @keyframes subway_tunnel_pulse { 0%,100% { opacity: .5; } 50% { opacity: 1; } }
+    .st-light { animation: subway_tunnel_pulse 4.6s ease-in-out infinite; }
+  </style>
+  <rect width="800" height="480" fill="#0B0B0D"/>
+  <g fill="none" stroke="#F4EFE6" stroke-width="1.2">
+    <rect x="40" y="40" width="720" height="400"/>
+    <rect x="110" y="78" width="580" height="324" opacity=".78"/>
+    <rect x="180" y="116" width="440" height="248" opacity=".6"/>
+    <rect x="250" y="154" width="300" height="172" opacity=".44"/>
+    <rect x="320" y="192" width="160" height="96" opacity=".3"/>
+  </g>
+  <line x1="40" y1="440" x2="760" y2="440" stroke="#F4EFE6" stroke-width="0.6" opacity=".22"/>
+  <line x1="400" y1="240" x2="400" y2="440" stroke="#F4EFE6" stroke-width="0.6" opacity=".22"/>
+  <circle cx="400" cy="240" r="6" fill="#E8A33D" class="st-light"/>
+  <circle cx="400" cy="240" r="16" fill="#E8A33D" opacity=".14" class="st-light"/>
+</svg>

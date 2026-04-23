@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-label="cave mouth">
+  <style>
+    @keyframes cave_mouth_depth { 0%,100% { opacity: .58; } 50% { opacity: .9; } }
+    .cm-glow { animation: cave_mouth_depth 8s ease-in-out infinite; }
+  </style>
+  <defs>
+    <radialGradient id="cm-g" cx="50%" cy="60%" r="42%">
+      <stop offset="0%" stop-color="#E8A33D" stop-opacity=".55"/>
+      <stop offset="60%" stop-color="#E8A33D" stop-opacity=".08"/>
+      <stop offset="100%" stop-color="#0B0B0D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="480" fill="#0B0B0D"/>
+  <path d="M80 480 L 80 340 Q 80 180 260 140 Q 400 110 540 140 Q 720 180 720 340 L 720 480 Z" fill="#121216" stroke="#F4EFE6" stroke-width="1.4"/>
+  <ellipse cx="400" cy="310" rx="220" ry="140" fill="url(#cm-g)" class="cm-glow"/>
+  <g fill="#F4EFE6">
+    <polygon points="180,140 196,220 212,140"/>
+    <polygon points="244,130 256,210 268,130"/>
+    <polygon points="312,124 322,180 332,124"/>
+    <polygon points="476,124 486,184 496,124"/>
+    <polygon points="544,130 558,212 572,130"/>
+    <polygon points="608,140 622,220 636,140"/>
+  </g>
+  <g fill="#F4EFE6" opacity=".65">
+    <polygon points="200,478 212,432 224,478"/>
+    <polygon points="580,478 594,430 608,478"/>
+  </g>
+</svg>

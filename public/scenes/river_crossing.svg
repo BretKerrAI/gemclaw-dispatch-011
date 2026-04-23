@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-label="river crossing">
+  <style>
+    @keyframes river_crossing_flow { from { transform: translateX(0); } to { transform: translateX(-80px); } }
+    .rc-wave { animation: river_crossing_flow 11s linear infinite; }
+    .rc-wave-2 { animation: river_crossing_flow 18s linear infinite; }
+  </style>
+  <rect width="800" height="480" fill="#0B0B0D"/>
+  <g stroke="#2B5ADC" fill="none" stroke-width="1.2">
+    <path class="rc-wave" d="M-80 200 Q -40 192, 0 200 T 80 200 T 160 200 T 240 200 T 320 200 T 400 200 T 480 200 T 560 200 T 640 200 T 720 200 T 800 200 T 880 200"/>
+    <path class="rc-wave-2" d="M-80 250 Q -40 242, 0 250 T 80 250 T 160 250 T 240 250 T 320 250 T 400 250 T 480 250 T 560 250 T 640 250 T 720 250 T 800 250 T 880 250" opacity=".72"/>
+    <path class="rc-wave" d="M-80 300 Q -40 292, 0 300 T 80 300 T 160 300 T 240 300 T 320 300 T 400 300 T 480 300 T 560 300 T 640 300 T 720 300 T 800 300 T 880 300" opacity=".5" style="animation-delay:-3s;"/>
+    <path class="rc-wave-2" d="M-80 350 Q -40 342, 0 350 T 80 350 T 160 350 T 240 350 T 320 350 T 400 350 T 480 350 T 560 350 T 640 350 T 720 350 T 800 350 T 880 350" opacity=".34"/>
+  </g>
+  <line x1="80" y1="120" x2="720" y2="400" stroke="#F4EFE6" stroke-width="1.4" stroke-dasharray="8 8" opacity=".85"/>
+  <circle cx="80" cy="120" r="4" fill="#E8A33D"/>
+  <circle cx="720" cy="400" r="4" fill="#E8A33D"/>
+</svg>

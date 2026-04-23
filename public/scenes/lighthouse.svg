@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-label="lighthouse">
+  <style>
+    @keyframes lighthouse_sweep { from { transform: rotate(-35deg); } to { transform: rotate(35deg); } }
+    .lh-beam { transform-origin: 260px 130px; animation: lighthouse_sweep 9s ease-in-out infinite alternate; }
+  </style>
+  <rect width="800" height="480" fill="#0B0B0D"/>
+  <line x1="0" y1="420" x2="800" y2="420" stroke="#F4EFE6" stroke-width="0.8" opacity=".36"/>
+  <polygon points="240,420 244,160 276,160 280,420" fill="none" stroke="#F4EFE6" stroke-width="1.4"/>
+  <rect x="238" y="140" width="44" height="20" fill="none" stroke="#F4EFE6" stroke-width="1.4"/>
+  <rect x="246" y="112" width="28" height="28" fill="none" stroke="#E8A33D" stroke-width="1.6"/>
+  <polygon points="244,112 276,112 260,90" fill="none" stroke="#F4EFE6" stroke-width="1.2"/>
+  <g class="lh-beam">
+    <polygon points="260,130 760,50 760,210" fill="#E8A33D" opacity=".16"/>
+    <polygon points="260,130 720,90 720,170" fill="#E8A33D" opacity=".22"/>
+  </g>
+  <g fill="#F4EFE6" opacity=".42">
+    <circle cx="120" cy="80" r="1"/>
+    <circle cx="480" cy="60" r="1"/>
+    <circle cx="620" cy="110" r="1"/>
+    <circle cx="710" cy="40" r="1"/>
+  </g>
+</svg>

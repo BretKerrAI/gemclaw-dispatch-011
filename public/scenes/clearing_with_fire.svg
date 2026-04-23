@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-label="clearing with fire">
+  <style>
+    @keyframes clearing_with_fire_flicker_a { 0%,100% { transform: scaleY(1) scaleX(1); opacity: .9; } 50% { transform: scaleY(1.1) scaleX(.92); opacity: 1; } }
+    @keyframes clearing_with_fire_flicker_b { 0%,100% { transform: scaleY(.95); opacity: .75; } 50% { transform: scaleY(1.12); opacity: 1; } }
+    .cf-flame-a { transform-origin: 400px 340px; animation: clearing_with_fire_flicker_a 1.2s ease-in-out infinite; }
+    .cf-flame-b { transform-origin: 400px 340px; animation: clearing_with_fire_flicker_b .9s ease-in-out infinite; }
+  </style>
+  <rect width="800" height="480" fill="#0B0B0D"/>
+  <ellipse cx="400" cy="360" rx="240" ry="30" fill="#121216" stroke="#F4EFE6" stroke-width="0.8" opacity=".5"/>
+  <g fill="#F4EFE6" opacity=".78">
+    <circle cx="196" cy="364" r="6"/>
+    <circle cx="268" cy="388" r="5"/>
+    <circle cx="346" cy="400" r="6"/>
+    <circle cx="432" cy="402" r="7"/>
+    <circle cx="512" cy="388" r="5"/>
+    <circle cx="590" cy="372" r="6"/>
+    <circle cx="616" cy="344" r="5"/>
+    <circle cx="208" cy="340" r="5"/>
+  </g>
+  <path d="M400 340 Q 378 300 384 264 Q 392 224 400 208 Q 408 224 416 264 Q 422 300 400 340 Z" fill="#E8A33D" class="cf-flame-a"/>
+  <path d="M400 340 Q 386 310 390 282 Q 396 256 400 242 Q 404 256 410 282 Q 414 310 400 340 Z" fill="#F4EFE6" opacity=".75" class="cf-flame-b"/>
+  <ellipse cx="400" cy="340" rx="46" ry="8" fill="#E8A33D" opacity=".35"/>
+</svg>

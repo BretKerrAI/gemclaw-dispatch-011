@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" aria-label="mirror">
+  <style>
+    @keyframes mirror_ripple { 0% { transform: translateY(0); opacity: .1; } 50% { opacity: .7; } 100% { transform: translateY(-260px); opacity: 0; } }
+    .mr-r { transform-origin: center; animation: mirror_ripple 7s ease-out infinite; }
+  </style>
+  <rect width="800" height="480" fill="#0B0B0D"/>
+  <ellipse cx="400" cy="240" rx="138" ry="200" fill="#121216" stroke="#E8A33D" stroke-width="3"/>
+  <ellipse cx="400" cy="240" rx="126" ry="188" fill="none" stroke="#F4EFE6" stroke-width="0.6" opacity=".35"/>
+  <g clip-path="inset(62px 262px 40px 262px round 138px / 200px)">
+    <line x1="280" y1="380" x2="520" y2="380" stroke="#2B5ADC" stroke-width="1.4" class="mr-r"/>
+    <line x1="290" y1="380" x2="510" y2="380" stroke="#2B5ADC" stroke-width="1" class="mr-r" style="animation-delay:-2.3s;"/>
+    <line x1="300" y1="380" x2="500" y2="380" stroke="#2B5ADC" stroke-width="0.8" class="mr-r" style="animation-delay:-4.6s;"/>
+  </g>
+  <circle cx="400" cy="40" r="3" fill="#E8A33D"/>
+</svg>
