@@ -1,0 +1,131 @@
+.page {
+  padding: 0 var(--outer);
+  min-height: 100dvh;
+  padding-bottom: 0;
+}
+
+.masthead {
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+  border-bottom: 1px solid var(--hair);
+}
+
+.headline {
+  font-size: clamp(2.4rem, 7vw, 5.4rem);
+  margin-top: 1.25rem;
+  max-width: 20ch;
+}
+
+.subhead {
+  margin-top: 1.5rem;
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  color: var(--ink-soft-cream);
+  max-width: 38rem;
+  font-style: italic;
+  color: var(--amber);
+}
+
+.frame {
+  padding: 6rem 0 5rem;
+  border-bottom: 1px solid var(--hair);
+}
+
+.frameEyebrow {
+  color: var(--amber);
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.frameGrid {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  column-gap: 3.5rem;
+  row-gap: 1.5rem;
+  align-items: start;
+}
+
+.frameLead {
+  font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.frameBody {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--cream);
+}
+
+.frameBody p + p { margin-top: 1.2em; }
+
+.formSection {
+  padding: 5.5rem 0;
+  max-width: 44rem;
+}
+
+.formHeadline {
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.01em;
+}
+
+.formIntro {
+  color: var(--ink-soft-cream);
+  margin-bottom: 2.5rem;
+  font-size: 1.05rem;
+}
+
+.footer {
+  padding: 3rem 0 3rem;
+  border-top: 1px solid var(--hair);
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: var(--ink-soft-cream);
+}
+
+.footerGrid strong {
+  color: var(--cream);
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  opacity: 0.7;
+}
+
+.footerGrid a {
+  color: var(--blue);
+  transition: color 120ms ease;
+}
+.footerGrid a:hover { color: var(--amber); }
+
+.footerBottom {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--hair);
+  color: rgba(244, 239, 230, 0.4);
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 960px) {
+  .frameGrid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .footerGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .frame { padding: 4rem 0; }
+  .formSection { padding: 4rem 0; }
+  .footerGrid { grid-template-columns: 1fr; }
+  .frameLead { font-size: 1.5rem; }
+}
