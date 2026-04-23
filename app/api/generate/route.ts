@@ -9,6 +9,7 @@ import {
 } from "@/lib/prompt";
 import { parseTreeJSON, validateTree } from "@/lib/tree";
 import { hashTree, saveAdventure } from "@/lib/kv";
+import { checkRateLimit, clientIp } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
 export const maxDuration = 60;
@@ -55,6 +56,23 @@ export async function POST(req: Request) {
 
   const parsed = parseInputs(body);
   if ("error" in parsed) return NextResponse.json(parsed, { status: 400 });
+
+  const ip = clientIp(req);
+  try {
+    const rate = await checkRateLimit(ip);
+    if (!rate.allowed) {
+      const minutes = Math.max(1, Math.ceil((rate.resetAt - Date.now()) / 60000));
+      return NextResponse.json(
+        {
+          error: `The library is rate-limited for this reader. Try again in ~${minutes} minute${minutes === 1 ? "" : "s"}.`,
+        },
+        { status: 429 },
+      );
+    }
+  } catch {
+    // if KV is unreachable, fail open on rate limiting — the generation step
+    // will fail independently if KV persistence is down.
+  }
 
   if (!process.env.ANTHROPIC_API_KEY) {
     return NextResponse.json(

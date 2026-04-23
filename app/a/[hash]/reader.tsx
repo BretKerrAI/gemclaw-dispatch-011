@@ -39,6 +39,7 @@ export function AdventureReader({ hash, tree, tone }: Props) {
   const choose = useCallback((next: string) => {
     if (typeof window === "undefined") return;
     window.location.hash = next;
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
   const restart = useCallback(() => {
