@@ -94,10 +94,13 @@ export async function POST(req: Request) {
 
   let rawText: string;
   try {
+    // NB: Claude Opus 4.7 no longer accepts the `temperature` parameter —
+    // the API returns 400 if sent. Variety is preserved by the user prompt
+    // being high-entropy (five personal details) and by the system prompt
+    // explicitly directing literary, non-formulaic structure.
     const msg = await client.messages.create({
       model: "claude-opus-4-7",
       max_tokens: 8000,
-      temperature: 0.8,
       system: SYSTEM_PROMPT,
       messages: [{ role: "user", content: buildUserMessage(parsed) }],
     });
