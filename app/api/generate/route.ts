@@ -12,7 +12,9 @@ import { hashTree, saveAdventure } from "@/lib/kv";
 import { checkRateLimit, clientIp } from "@/lib/rate-limit";
 
 export const runtime = "nodejs";
-export const maxDuration = 60;
+// Opus 4.7 generating a 15-node tree at 8k max_tokens regularly exceeds 60s.
+// Pro plan allows up to 300s on Node runtime.
+export const maxDuration = 300;
 
 const MAX_FIELD_LEN = 240;
 
