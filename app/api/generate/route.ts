@@ -81,6 +81,15 @@ export async function POST(req: Request) {
     );
   }
 
+  // Preflight: refuse to call Claude if we have nowhere to store the result.
+  // Otherwise we'd burn credits on a generation that can't persist or be linked.
+  if (!process.env.KV_REST_API_URL && !process.env.KV_URL) {
+    return NextResponse.json(
+      { error: "server not configured (KV store)" },
+      { status: 500 },
+    );
+  }
+
   const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
   let rawText: string;
